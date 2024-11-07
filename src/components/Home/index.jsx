@@ -1,9 +1,8 @@
-import { useHistory } from 'react-router-dom';
+
 import Header from '../Header';
 import './index.css';
 
-const Home = () => {
-    const history = useHistory();
+const Home = ({ history }) => {
 
     return (
         <>
@@ -17,7 +16,7 @@ const Home = () => {
                     <button
                         type="button"
                         className="find-jobs-button"
-                        onClick={() => history.push('/jobs')}
+                        onClick={() => history.push('/Jobby-App/jobs')}
                     >
                         Find Jobs
                     </button>

@@ -6,12 +6,12 @@ import './index.css'
 const Header = ({ history }) => {
     const onClickLogout = () => {
         Cookies.remove('jwt_token')
-        history.replace('/login')
+        history.replace('/Jobby-App/login')
     }
 
     return (
         <nav className="header">
-            <Link to="/">
+            <Link to="/Jobby-App/">
                 <img
                     src="https://assets.ccbp.in/frontend/react-js/logo-img.png"
                     alt="website logo"
@@ -20,13 +20,13 @@ const Header = ({ history }) => {
             </Link>
             <ul className="nav-links">
                 <li>
-                    <Link to="/" className="nav-link">
+                    <Link to="/Jobby-App/" className="nav-link">
                         <FaHome className="nav-icon" />
                         <span className="nav-text">Home</span>
                     </Link>
                 </li>
                 <li>
-                    <Link to="/jobs" className="nav-link">
+                    <Link to="/Jobby-App/jobs" className="nav-link">
                         <FaBriefcase className="nav-icon" />
                         <span className="nav-text">Jobs</span>
                     </Link>

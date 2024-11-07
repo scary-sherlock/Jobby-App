@@ -13,7 +13,7 @@ const NotFound = () => (
         <p className="not-found-description">
             We're sorry, the page you requested could not be found. Please check the URL or try again later.
         </p>
-        <Link to="/" className="home-button">
+        <Link to="/Jobby-App/" className="home-button">
             Go to Home
         </Link>
     </div>
