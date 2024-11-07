@@ -1,0 +1,126 @@
+.login-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #1e2022;
+    padding: 20px;
+}
+
+.login-website-logo {
+    width: 180px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.login-website-logo:hover {
+    transform: scale(1.05);
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2f3436;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.input-label {
+    font-size: 14px;
+    color: #cbd5e1;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.username-input-field,
+.password-input-field {
+    width: 90%;
+    height: 48px;
+    padding: 10px 16px;
+    border: 1px solid #475569;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #f1f5f9;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #2f3436;
+}
+
+.username-input-field:focus,
+.password-input-field:focus {
+    outline: none;
+    border-color: #4299e1;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
+}
+
+.login-button {
+    width: 30%;
+    height: 48px;
+    background-color: #4299e1;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.login-button:hover {
+    background-color: #3182ce;
+}
+
+.login-button:active {
+    transform: scale(0.98);
+}
+
+.error-message {
+    color: #e53e3e;
+    font-size: 14px;
+    margin-top: 16px;
+    text-align: center;
+    padding: 10px;
+    background-color: #fed7d7;
+    border-radius: 4px;
+    width: 100%;
+}
+
+@media (max-width: 576px) {
+    .login-website-logo {
+        width: 140px;
+    }
+
+    .form-container {
+        padding: 30px 20px;
+    }
+
+    .input-label {
+        font-size: 13px;
+    }
+
+    .username-input-field,
+    .password-input-field {
+        height: 44px;
+        font-size: 14px;
+    }
+
+    .login-button {
+        height: 44px;
+        font-size: 14px;
+    }
+
+    .error-message {
+        font-size: 12px;
+    }
+}
