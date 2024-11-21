@@ -16,7 +16,7 @@ const Home = ({ history }) => {
                     <button
                         type="button"
                         className="find-jobs-button"
-                        onClick={() => history.push('/Jobby-App/jobs')}
+                        onClick={() => history.push('/jobs')}
                     >
                         Find Jobs
                     </button>

@@ -14,7 +14,7 @@ class Login extends Component {
     onSubmitSuccess = jwtToken => {
         const { history } = this.props
         Cookies.set('jwt_token', jwtToken, { expires: 30 })
-        history.replace('/Jobby-App/')
+        history.replace('/')
     }
 
     onSubmitFailure = errorMsg => {
@@ -89,7 +89,7 @@ class Login extends Component {
         const { showSubmitError, errorMsg } = this.state
         const jwtToken = Cookies.get('jwt_token')
         if (jwtToken !== undefined) {
-            return <Redirect to="/Jobby-App/" />
+            return <Redirect to="/" />
         }
         return (
             <div className="login-form-container">

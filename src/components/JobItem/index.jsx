@@ -9,7 +9,7 @@ class JobItem extends React.Component {
         const { companyLogoUrl, title, rating, location, employmentType, packagePerAnnum, jobDescription } = job
 
         return (
-            <Link to={`/Jobby-App/jobs/${job.id}`} className="job-item-link">
+            <Link to={`/jobs/${job.id}`} className="job-item-link">
                 <li className="job-item-container">
                     <div className="job-item-header">
                         <img src={companyLogoUrl} alt="company logo" className="company-logo" />
